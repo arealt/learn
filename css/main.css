@@ -45,6 +45,7 @@ to {transform:rotate(360deg);}
 }
 
 #log{
+ position:absolute;
  animation:lo 2s;
  animation-timing-function: linear;
  animation-iteration-count: infinite;
