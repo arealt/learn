@@ -44,5 +44,5 @@ function animate(obj,json,fn) {
                 fn();
             }
         }
-    }, 30);
+    }, 60);
 }
