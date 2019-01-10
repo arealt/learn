@@ -1,24 +1,30 @@
 @charset "UTF-8";
+#content{
+    border:1px #0AA770 solid;
+    width:978px;
+}
         #w-slider{
-            margin:50px auto;
-            width:800px;
+
+            margin:10px auto;
+            width:960px;
             position: relative;
         }
         #slider{
             position: relative;
-            width:800px;
-            height:450px;
+            width:960px;
+            height:540px;
             overflow: hidden;
         }
         #slider img{
-            width:800px;
+            width:960px;
             position: absolute;
         }
         .slider-ctrl{
             text-align: center;
         }
         .slicer-ctrl-con{
-            display: inline-block;
+            position:absolute;
+            bottom:10px;
             width:24px;
             height:20px;
             background:url(../images/icon.png) no-repeat -24px -764px;
@@ -47,3 +53,20 @@
         .current{
             background:url(../images/icon.png) no-repeat 0 -764px;
         }
+       /*开始home区域*/
+.home-title{
+    color:#000;
+}
+.home-title .title{
+    font-weight: 400;
+    text-align: center;
+    margin: 45px 0 15px;
+    letter-spacing: 4px;
+}
+.home-title .desc{
+    font-size:16px;
+    text-align: center;
+    letter-spacing: 12px;
+    color: #373737;
+    margin-bottom: 45px;
+}
