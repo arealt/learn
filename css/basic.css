@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*css ��ʼ�� */
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
@@ -97,19 +97,56 @@ to {transform:rotate(360deg);}
   font-size:32px;
   background-color:orange;
 }
-.main-nav ul{}
+.main-nav ul{
+ display:flex;
+ width:700px;
+}
 .main-nav li{
+  flex:15;
   float:left;  
 }
+.main-nav li.flex15{
+ flex:15;
+}
+.main-nav li.flex20{
+ flex:20;
+}
+.main-nav .activi a{
+  display:none;
+}
+.main-nav .activi:hover a{
+  display:block;
+}
+.activi .top{
+ color:orange;
+ font-size:20px;
+ position:absolute;
+ z-index:1;
+}
+.n1{
+  top:60px;
+  left:228px;
+}
+.n2{
+  top:120px;
+  left:228px;
+}
+.n3{
+  top:180px;
+  left:238px;
+}
+
 .header-main .lean{
-  width:164px;
+  width:160px;
   height:60px;
   float:right;
   background-color:#00d936;
 }
-.main-nav a{
+.main-nav a,
+.main-nav span{
+  text-align:center;
   display:block;
-  padding:10px 28px;
+  padding:10px 0;
   color:#FFF;
 }
 .main-nav a:hover{
