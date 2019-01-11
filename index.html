@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -20,9 +19,15 @@
         <div id="logo"><img id="log" src="https://s2.ax1x.com/2019/01/10/FOqVSg.png" style="height:60px;" /></div>
         <div class="main-nav">
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="activity.html">活动</a></li>
-                <li><a href="works.html">作品</a></li>
+                <li class="first"><a href="index.html">首页</a></li>
+                <li class="activi">
+                    <span>活动</span>
+                    <a class="top n1" href="classmeeting.html">主题班会</a>
+                    <a class="top n2" href="training.html">入校军训</a>
+                    <a class="top n3" href="sing.html">班班唱</a>
+                </li>
+                <li><a href="works.html">作品</a>
+                </li>
                 <li><a href="cadre.html">班干部</a></li>
                 <li><a href="score.html">学习成绩</a></li>
             </ul>
@@ -141,13 +146,10 @@
     w_slider.onmouseout=function(){                 //鼠标离开时，自动播放
         timer=setInterval(toRight,5000);
     }
-
 </script>
 <script>
     function $(id){return document.getElementById(id);}
     console.log(1);
-
-
 </script>
 
 
