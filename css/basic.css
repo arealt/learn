@@ -105,9 +105,6 @@ to {transform:rotate(360deg);}
   flex:15;
   float:left;  
 }
-.main-nav li.flex15{
- flex:15;
-}
 .main-nav li.flex20{
  flex:20;
 }
@@ -125,15 +122,15 @@ to {transform:rotate(360deg);}
 }
 .n1{
   top:60px;
-  left:228px;
+  left:275px;
 }
 .n2{
   top:120px;
-  left:228px;
+  left:275px;
 }
 .n3{
   top:180px;
-  left:238px;
+  left:285px;
 }
 
 .header-main .lean{
