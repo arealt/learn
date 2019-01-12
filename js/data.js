@@ -21,7 +21,7 @@ var data = {
     "程阳":"<img src='https://s2.ax1x.com/2019/01/12/FjfLW9.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfqJJ.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjf7oF.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/Fjfbi4.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfOzR.jpg' />",
     "方子俊":"<img src='https://s2.ax1x.com/2019/01/12/FjhpdO.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh9oD.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhSeK.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/FjfxL6.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhPFe.jpg' />" ,
+"<img src='https://s2.ax1x.com/2019/01/12/FjfxL6.jpg' />" ,
     "甘世泽":"<img src='https://s2.ax1x.com/2019/01/12/Fjh3Ss.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhGyq.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh8ln.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/FjhlWj.jpg' />",
     "苟燕":"<img src='https://s2.ax1x.com/2019/01/12/FjhyOx.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhs61.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhcm6.jpg' />" +
