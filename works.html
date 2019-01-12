@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>date</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>18秋平面设计班</title>
+    <meta name="keywords" content="18秋平面设计班" />
+    <meta name="description" content="18秋平面设计班是个优秀的班级" />
+    <meta content="always" name="referrer">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/basic.css" type="text/css" />
+    <link rel="stylesheet" href="" type="text/css" />
     <style>
         html,body{
             margin:0;
@@ -11,38 +18,78 @@
             overflow: hidden;
         }
         aside{
-            width:220px;
-            height:100%;
+            width:163px;
             background-color: #ddd;
             float:left;
         }
-        ul{
-
+        .list{
+            overflow: scroll;
+            margin-top:0px;
         }
-        ul li{
+        .list li{
             cursor: pointer;
+            margin:5px 0;
+            padding: 20px;
+            text-align: center;
         }
-        ul li:before{
+        .list li:hover{
+            color:#fff;
+            background-color: green;
+        }
+        .list li:before{
             content:"";
         }
         article{
             overflow: scroll;
-            height:100%;
+            margin-top:60px;
             background-color: antiquewhite;
+        }
+        .content>img{
+            margin:5px 0;
+            border:5px #000000 solid;
         }
     </style>
 </head>
 <body>
+<header class="">
+    <div class="header-main w">
+        <div id="logo"><img id="log" src="https://s2.ax1x.com/2019/01/10/FOqVSg.png" style="height:60px;" /></div>
+        <div class="main-nav">
+            <ul>
+                <li class="first"><a href="index.html">&nbsp首页</a></li>
+                <li class="activi">
+                    <span>活动</span>
+                    <a class="top n1" href="classmeeting.html">主题班会</a>
+                    <a class="top n2" href="training.html">入校军训</a>
+                    <a class="top n3" href="sing.html">班班唱</a>
+                </li>
+                <li><a href="works.html">作品</a>
+                </li>
+                <li ><a href="cadre.html">班干部</a></li>
+                <li class="flex20"><a href="score.html">学习成绩</a></li>
+            </ul>
+        </div>
+        <div class="lean fr"><img src="https://s2.ax1x.com/2019/01/10/FOqAfS.png" style="height:40px;" /></div>
+    </div>
+</header>
+<section class="w">
 <aside>
     <ul class="list">
     </ul>
 </aside>
-<article>
-    <p id="content">111</p>
+<article id="main">
+    <p id="content" style="text-align: center;">请点击学生名字，获取相应作品信息。</p>
 </article>
+</section>
+
+
 <script src="js/data.js"></script>
 <script>
+    var clientHeight=window.innerHeight;
     var list=document.getElementsByClassName("list")[0];
+    var main=document.getElementById("main");
+    list.style.height=(clientHeight-60)+"px";
+    main.style.height=(clientHeight-60)+"px";
     for(var title in data){
         var li=document.createElement("li");
         li.innerHTML=title;

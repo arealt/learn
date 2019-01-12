@@ -2,8 +2,11 @@
  * Created by Administrator on 2019/1/10.
  */
 var data = {
-    "曹进南":"<img src='images/1.jpg' />",
-    "曹亚伟":"<img src='images/1.jpg' />",
+
+    "曹进南":"<img src='https://s2.ax1x.com/2019/01/12/FjccmF.jpg' /><img src=' https://s2.ax1x.com/2019/01/12/Fjc2TJ.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjcgw4.jpg' />",
+
+    "曹亚伟":"<img src=' https://s2.ax1x.com/2019/01/12/FjcXtA.jpg' /><img src=' https://s2.ax1x.com/2019/01/12/Fjcb0e.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjcOkd.jpg' />" +
+"<img src='https://s2.ax1x.com/2019/01/12/FjcHmD.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjcqTH.jpg' />",
     "曹谦亮":"<img src='images/1.jpg' />",
     "陈林":"<img src='images/1.jpg' />",
     "陈晓华":"<img src='images/1.jpg' />",
