@@ -84,44 +84,6 @@
 
 
 <script src="js/data.js"></script>
-<script>
-    var clientHeight=window.innerHeight;
-    var list=document.getElementsByClassName("list")[0];
-    var main=document.getElementById("main");
-    list.style.height=(clientHeight-60)+"px";
-    main.style.height=(clientHeight-60)+"px";
-    for(var title in data){
-        var li=document.createElement("li");
-        li.innerHTML=title;
-        li.setAttribute('data-title',title);
-        list.appendChild(li);
-    }
-    var lis=document.querySelectorAll(".list li");
-    var content=document.querySelector("#content");
-    for(var i=0;i<lis.length;i++){
-        lis[i].addEventListener('click',function(){
-            var title=this.dataset["title"];
-            //console.log(content);
-            content.innerHTML=data[title];
-            if(window.history&&history.pushState){
-                history.pushState(title,"此浏览器不支持","?t="+title);  //把title给state  后面通过e.state访问
-            }else{
-                console.log("浏览器不支持history.pushState");
-            }
-        })
-    }
-    // 当我们在伪造的访问历史中前进或后退时会执行一个popstate事件
-    window.addEventListener('popstate',function(e){
-        content.innerHTML=data[e.state];
-    })
-    var search=window.location.search;
-    var title=search.split("=")[1];
-    if(title){
-        // 如果地址栏中的地址有中文，会以URL编码方式呈现
-        // decodeURI 可以转换到之前中文
-        console.log(decodeURI(title));
-        content.innerHTML=data[decodeURI(title)];
-    }
-</script>
+<script src="js/konva.min.js"></script>
 </body>
 </html>
