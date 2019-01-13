@@ -84,6 +84,22 @@
 
 
 <script src="js/data.js"></script>
+<script>
+    var clientHeight=window.innerHeight;
+    var list=document.getElementsByClassName("list")[0];
+    var main=document.getElementById("main");
+    list.style.height=(clientHeight-60)+"px";
+    main.style.height=(clientHeight-60)+"px";
+    for(var title in data){
+        var li=document.createElement("li");
+        li.innerHTML=title;
+        li.setAttribute('data-title',title);
+        list.appendChild(li);
+    }
+    var lis=document.querySelectorAll(".list li");
+    var content=document.querySelector("#content");
+
+</script>
 <script src="js/konva.min.js"></script>
 </body>
 </html>
