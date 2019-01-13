@@ -52,8 +52,8 @@ var data = {
 "<img src='https://s2.ax1x.com/2019/01/13/FvvknO.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvvPc6.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvvEHe.jpg' />",
 
     "李豫学":"<img src='https://s2.ax1x.com/2019/01/13/Fvvdg0.jpg' />",
-    "刘发军":"<img src='https://imgchr.com/i/FvvyE4g' /><img src='https://imgchr.com/i/Fvvc59' /><img src='https://imgchr.com/i/FvvrbF' />" +
-"<img src='https://imgchr.com/i/FvvBuT' /><img src='https://imgchr.com/i/FvvDDU' /><img src='https://imgchr.com/i/Fvv6UJ' />",
+    "刘发军":"<img src='https://s2.ax1x.com/2019/01/13/FvvrbF.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvvBuT.md.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvvDDU.md.jpg' />" +
+"<img src='https://s2.ax1x.com/2019/01/13/Fvvc59.md.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvvyE4.jpg' /><img src='https://s2.ax1x.com/2019/01/13/Fvv6UJ.jpg' />",
     "刘楠":"<img src='https://s2.ax1x.com/2019/01/13/FvvWgx.jpg' /><img src='https://s2.ax1x.com/2019/01/13/Fvvfv6.md.jpg' /><img src='https://s2.ax1x.com/2019/01/13/Fvv5DO.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/13/Fvv4KK.md.jpg' />",
     "刘正":"<img src='https://s2.ax1x.com/2019/01/13/Fvx9aQ.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvxC5j.jpg' /><img src='https://s2.ax1x.com/2019/01/13/Fvvxr8.jpg' />" +
