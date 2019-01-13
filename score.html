@@ -11,6 +11,19 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/basic.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <style>
+        .content{
+            display: flex;
+        }
+        .content>tr{
+            flex:10;
+            display: flex;
+
+        }
+        .td{
+            border:1px green solid;
+        }
+    </style>
 </head>
 <body>
 <header class="clearfix">
@@ -35,8 +48,28 @@
         <div class="lean fr"><img src="https://s2.ax1x.com/2019/01/10/FOqAfS.png" style="height:40px;" /></div>
     </div>
 </header>
-<section>
-    学习成绩正在开发中...
+<section class="w main">
+    <h1 style="text-align: center;">第一学期期中成绩</h1>
+    <table id="content"></table>
 </section>
+<script src="js/score1.js"></script>
+<script>
+    var content=document.getElementById("content");
+    for (var prop in obj) {
+        var arr1 = obj[prop].split("-");
+        var tr = document.createElement('tr');
+        for(var i=0;i<arr1.length;i++){
+            var td=document.createElement('td');
+            td.innerText=arr1[i];
+            td.className="td";
+            if(i>0) {
+                td.style.textAlign = "center";
+            }
+            tr.appendChild(td);
+        }
+        content.appendChild(tr);
+    }
+
+</script>
 </body>
 </html>
