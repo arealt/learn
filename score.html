@@ -23,6 +23,10 @@
         .td{
             border:1px green solid;
         }
+        .firstTd{
+            border:1px green solid;
+            text-indent:2em;
+        }
     </style>
 </head>
 <body>
@@ -49,28 +53,64 @@
     </div>
 </header>
 <section class="w main">
-    <h1 style="text-align: center;">第一学期期中成绩</h1>
+    <!--<select name="sele" id="sele">-->
+        <!--<option selected value="0">请选择成绩表</option>-->
+        <!--<option value="1">期中成绩</option>-->
+        <!--<option value="2">期末成绩</option>-->
+    <!--</select>-->
+    <h1 style="text-align: center;" id="h1">第一学年上学期期末成绩</h1>
     <table id="content"></table>
 </section>
-<script src="js/score1.js"></script>
+<script id="scr" src="js/score2.js"></script>
 <script>
-    var content=document.getElementById("content");
-    for (var prop in obj) {
-        obj[0]+="";
-        var arr1 = obj[prop].split("-");
-        var tr = document.createElement('tr');
-        for(var i=0;i<arr1.length;i++){
-            var td=document.createElement('td');
-            td.innerText=arr1[i];
-            td.className="td";
-            if(i>0) {
-                td.style.textAlign = "center";
+//    window.onload=function(){
+//        var sele = document.getElementById("sele");
+//        var scr = document.getElementById("scr");
+//        var h1 = document.getElementById("h1");
+//        sele.addEventListener("change", function () {
+//            var score = {};
+//            if (sele.value == 1) {
+//                scr.src = "js/score1.js";
+//                h1.innerHTML = "期中成绩";
+//            } else if (sele.value == 2) {
+//                scr.src = "js/score2.js";
+//                h1.innerHTML = "期末成绩";
+//            }
+//            document.execCommand("Refresh");
+//            showTable();
+//        });
+//    }
+showTable();
+function showTable() {
+        var content = document.getElementById("content");
+        for (var prop in score) {
+            var arr1 = score[prop].split("-");
+            var tr = document.createElement('tr');
+            var count = 0;
+            for (var i = 0; i < arr1.length; i++) {
+                var td = document.createElement('td');
+                td.innerText = arr1[i];
+                td.className = "td";
+                if (i > 0) {
+                    count += parseInt(arr1[i]);
+                    td.style.textAlign = "center";
+                } else {
+                    td.className = "firstTd";
+                }
+                tr.appendChild(td);
             }
-            tr.appendChild(td);
+            var td1 = document.createElement('td');
+            td1.innerText = (count / 6).toFixed(1);
+            if (!count) {
+                td1.innerText = "平均分";
+            }
+            td1.className = "td";
+            tr.appendChild(td1);
+            content.appendChild(tr);
         }
-        content.appendChild(tr);
     }
 
 </script>
+
 </body>
 </html>
