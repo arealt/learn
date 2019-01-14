@@ -128,22 +128,20 @@ to {transform:rotate(360deg);}
   display:block;
 }
 .activi .top{
+
  color:orange;
  font-size:20px;
  position:absolute;
+ left:10px;
  z-index:1;
 }
 .n1{
-  top:60px;
-  left:275px;
 }
 .n2{
   top:120px;
-  left:275px;
 }
 .n3{
   top:180px;
-  left:285px;
 }
 
 .header-main .lean{
