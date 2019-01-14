@@ -1,8 +1,6 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*css ��ʼ�� */
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, 
-
-img { margin:0; padding:0; }
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
 ul, ol { list-style:none; }
 input { padding-top:0; padding-bottom:0; font-family: "SimSun","����";}
@@ -13,9 +11,7 @@ img {border:0;	vertical-align:middle; }  /*  ȥ��ͼƬ�Ͳ�Ĭ�ϵ�3��
 table { border-collapse:collapse; }
 body {
     font:24px/150% Arial,Verdana,"\5b8b\4f53";
-    font-family: "微软雅黑","Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-
-
-serif;
+    font-family: "微软雅黑","Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-serif;
     color:#666;
     background:#fff
 }
@@ -96,23 +92,31 @@ to {transform:rotate(360deg);}
 }
 .main-nav{
   height:60px;
-  line-height:10px;
+  line-height:40px;
   float:left;
   font-size:32px;
   background-color:orange;
 }
 .main-nav ul{
- height:60px;
  display:flex;
  width:700px;
 }
 .main-nav li{
-  margin:14px 5px;
   flex:15;
-  float:left;  
+  float:left;
+  position:relative;  
 }
-.main-nav .first~li{
-  border-left:1px #ffffff solid;
+
+.main-nav .first~li::after{
+  content:"";
+  height:32px;
+  width:1px;
+  position:absolute;
+  top:14px;
+  background-color:#ddd; 
+}
+.main-nav li:hover::after{
+  background-color:green;
 }
 .main-nav li.flex20{
  flex:20;
@@ -152,10 +156,14 @@ to {transform:rotate(360deg);}
 .main-nav span{
   text-align:center;
   display:block;
-  padding:10px 0;
+  padding:10px 16px;
   color:#FFF;
 }
 .main-nav a:hover{
+  color:orange;
+  background-color:green;
+}
+.main-nav span:hover{
   color:orange;
   background-color:green;
 }
