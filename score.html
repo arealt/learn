@@ -103,7 +103,8 @@ function showTable() {
             var arr1 = score[prop].split("-");
             var tr = document.createElement('tr');
             var count = 0;
-            for (var i = 0; i < arr1.length; i++) {
+            var len=arr1.length-1;
+            for (var i = 0; i < len+1; i++) {
                 var td = document.createElement('td');
                 td.innerText = arr1[i];
                 td.className = "td";
@@ -116,7 +117,7 @@ function showTable() {
                 tr.appendChild(td);
             }
             var td1 = document.createElement('td');
-            td1.innerText = (count / 6).toFixed(1);
+            td1.innerText = (count /len ).toFixed(1);
             if (!count) {
                 td1.innerText = "平均分";
             }
