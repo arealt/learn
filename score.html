@@ -21,11 +21,12 @@
 
         }
         .td{
+            text-align: center;
             border:1px green solid;
         }
         .firstTd{
             border:1px green solid;
-            text-indent:2em;
+            text-indent:1em;
         }
         select{
             width:210px;;
@@ -110,7 +111,6 @@ function showTable() {
                 td.className = "td";
                 if (i > 0) {
                     count += parseInt(arr1[i]);
-                    td.style.textAlign = "center";
                 } else {
                     td.className = "firstTd";
                 }
