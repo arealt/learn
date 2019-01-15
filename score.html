@@ -27,6 +27,10 @@
             border:1px green solid;
             text-indent:2em;
         }
+        select{
+            width:210px;;
+           font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -53,36 +57,46 @@
     </div>
 </header>
 <section class="w main">
-    <!--<select name="sele" id="sele">-->
-        <!--<option selected value="0">请选择成绩表</option>-->
-        <!--<option value="1">期中成绩</option>-->
-        <!--<option value="2">期末成绩</option>-->
-    <!--</select>-->
-    <h1 style="text-align: center;" id="h1">第一学年上学期期末成绩</h1>
+    <select name="sele" id="sele">
+        <option selected value="0">选择查看成绩:</option>
+        <option value="1">期中成绩</option>
+        <option value="2">期末成绩</option>
+    </select>
+    <h1 style="text-align: center;" id="h1"></h1>
     <table id="content"></table>
 </section>
-<script id="scr" src="js/score2.js"></script>
 <script>
-//    window.onload=function(){
-//        var sele = document.getElementById("sele");
+    window.onload=function(){
+        var sele = document.getElementById("sele");
 //        var scr = document.getElementById("scr");
-//        var h1 = document.getElementById("h1");
-//        sele.addEventListener("change", function () {
-//            var score = {};
-//            if (sele.value == 1) {
-//                scr.src = "js/score1.js";
-//                h1.innerHTML = "期中成绩";
-//            } else if (sele.value == 2) {
-//                scr.src = "js/score2.js";
-//                h1.innerHTML = "期末成绩";
-//            }
-//            document.execCommand("Refresh");
-//            showTable();
-//        });
-//    }
-showTable();
-function showTable() {
         var content = document.getElementById("content");
+        var h1 = document.getElementById("h1");
+        sele.addEventListener("change", function () {
+            var len=content.rows.length;
+            for(var i=0;i<len;i++){
+                content.deleteRow(i);
+                len=len-1;
+                i=i-1;
+            }
+            var scr=document.createElement('script');
+            if (sele.value == 1) {
+                scr.src = "js/score1.js";
+                h1.innerHTML = "第一学年上学期期中成绩";
+            } else if (sele.value == 2) {
+                scr.src = "js/score2.js";
+                h1.innerHTML = "第一学年上学期期末成绩";
+            }
+            document.body.appendChild(scr);
+
+            scr.onload=function(){
+                showTable();
+                document.body.removeChild(scr);
+            }
+        });
+    }
+
+function showTable() {
+
         for (var prop in score) {
             var arr1 = score[prop].split("-");
             var tr = document.createElement('tr');
