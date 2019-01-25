@@ -14,7 +14,7 @@
 </head>
 <body>
 <header class="clearfix">
-    <div class="header-top w"><img src="https://s2.ax1x.com/2019/01/10/FOqFFf.png" /></div>
+    <div class="header-top w"><img src="https://s2.ax1x.com/2019/01/10/FOqFFf.png"  /></div>
     <div class="header-main w">
         <div id="logo"><img id="log" src="https://s2.ax1x.com/2019/01/10/FOqVSg.png" style="height:60px;" /></div>
         <div class="main-nav">
@@ -35,7 +35,14 @@
         <div class="lean fr"><img src="https://s2.ax1x.com/2019/01/10/FOqAfS.png" style="height:40px;" /></div>
     </div>
 </header>
+<div class="congra w clearfix">
+    <ul id="zpp">
+
+    </ul>
+
+</div>
 <section id="content" class="w">
+
     <div id="w-slider">
         <div id="slider">
             <img style="width:960px;height:540px" src="https://s2.ax1x.com/2019/01/14/Fxl1fA.jpg" />
@@ -147,7 +154,27 @@
 </script>
 <script>
     function $(id){return document.getElementById(id);}
-    console.log(1);
+    var zpp=$('zpp');
+    var arrString=['恭','喜','朱','盼','盼','同','学','喜','获','期','末','考','试','冠','军'];
+    var lis=[];
+    var flag=0;
+    function dou(t,str){
+        setTimeout(function(){
+            lis[t].style.display=str;
+        },700*t+1000);
+    }
+    for(var i=0;i<15;i++){
+        var li=document.createElement('li');
+        li.innerHTML=arrString[i];
+        zpp.appendChild(li);
+        lis.push(li);
+        dou(i,'block');
+    }
+
+
+
+
+
 </script>
 
 
