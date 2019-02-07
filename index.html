@@ -172,6 +172,7 @@
     }
     setTimeout(function(){
         lis.forEach(function(ele){
+            ele.innerHTML="";
             animate(ele,{height:0,fontSize:0,padding:0})
         })
     },13000)
