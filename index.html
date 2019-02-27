@@ -11,6 +11,19 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/basic.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <style>
+    .score-t{
+        border:1px green solid; 
+    }
+    .score-t td{
+       border:1px green solid;
+       text-align: center;
+       height:60px; 
+    }
+    .score-t td:not(:first-child){
+        width:20%;
+    }
+    </style>
 </head>
 <body>
 <header class="clearfix">
@@ -36,9 +49,9 @@
     </div>
 </header>
 <div class="congra w clearfix">
-    <ul id="zpp">
+    <!-- <ul id="zpp">
 
-    </ul>
+    </ul> -->
 
 </div>
 <section id="content" class="w">
@@ -63,6 +76,74 @@
     <div class="home-title w">
     <div class="title">与众不同的设计社区</div>
     <div class="desc">让我们因设计成为朋友</div>
+</div>
+<div class="score-list">
+    <table class="score-t">
+        <tr>
+            <td></td>
+            <td>星期一</td>
+            <td>星期二</td>
+            <td>星期三</td>
+            <td>星期四</td>
+            <td>星期五</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>语文</td>
+            <td>photoshop</td>
+            <td>素描</td>
+            <td>数学</td>
+            <td>数学</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>语文</td>
+            <td>photoshop</td>
+            <td>素描</td>
+            <td>photoshop</td>
+            <td>体育</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>构成基础</td>
+            <td>职业道德</td>
+            <td>素描</td>
+            <td>photoshop</td>
+            <td>体育</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>构成基础</td>
+            <td>photoshop</td>
+            <td>劳动</td>
+            <td>素描</td>
+            <td>班会</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>AI操作</td>
+            <td>photoshop</td>
+            <td>劳动</td>
+            <td>素描</td>
+            <td>劳动</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>AI操作</td>
+            <td>教师学习</td>
+            <td>班会</td>
+            <td>素描</td>
+            <td>劳动</td>
+        </tr>
+    </table>
 </div>
     <div class="home-middle w">
 
@@ -154,38 +235,26 @@
 </script>
 <script>
     function $(id){return document.getElementById(id);}
-    var zpp=$('zpp');
-    var arrString=['恭','喜','朱','盼','盼','同','学','喜','获','期','末','考','试','冠','军'];
-    var lis=[];
-    var flag=0;
-    function dou(t,str){
-        setTimeout(function(){
-            lis[t].style.display=str;
-        },700*t+1000);
-    }
-    for(var i=0;i<15;i++){
-        var li=document.createElement('li');
-        li.innerHTML=arrString[i];
-        zpp.appendChild(li);
-        lis.push(li);
-        dou(i,'block');
-    }
-    setTimeout(function(){
-        lis.forEach(function(ele){
-            ele.innerHTML="";
-            animate(ele,{height:0,fontSize:0,padding:0})
-        })
-    },14000)
-
-
-
-
-
-
+    // var zpp=$('zpp');
+    // var arrString=['恭','喜','朱','盼','盼','同','学','喜','获','期','末','考','试','冠','军'];
+    // var lis=[];
+    // var flag=0;
+    // function dou(t,str){
+    //     setTimeout(function(){
+    //         lis[t].style.display=str;
+    //     },700*t+1000);
+    // }
+    // for(var i=0;i<15;i++){
+    //     var li=document.createElement('li');
+    //     li.innerHTML=arrString[i];
+    //     zpp.appendChild(li);
+    //     lis.push(li);
+    //     dou(i,'block');
+    // }
+    // setTimeout(function(){
+    //     lis.forEach(function(ele){
+    //         animate(ele,{height:0,fontSize:0,paddingTop:0,paddingBottom:0,paddingLeft:'40px',paddingRight:'40px'})
+    //     })
+    // },13000)                //第一名缓慢出字效果
 </script>
-
-
-
-
-
 <body>
