@@ -23,6 +23,19 @@
     .score-t td:not(:first-child){
         width:20%;
     }
+    #computer{
+        width:100%;
+        border:1px green solid;
+    }
+    #computer td{
+        box-sizing: border-box;
+        border:1px green solid;
+        text-align: center;
+        width:10%;
+        float:left;
+        cellspacing:0;
+        cellpadding:0;
+    }
     </style>
 </head>
 <body>
@@ -148,6 +161,13 @@
     <div class="home-middle w">
 
     </div>
+    <div style="width:100%;margin:0 15px;">&nbsp</div>
+    <div>
+        <h2 style="text-align: center;">学生上机编号</h2>
+        <table id="computer">
+   
+        </table>
+    </div>
 </section>
 <footer>
     <!--友情链接:<a href="https://ke.qq.com/">腾讯课堂</a>-->
@@ -256,5 +276,75 @@
     //         animate(ele,{height:0,fontSize:0,paddingTop:0,paddingBottom:0,paddingLeft:'40px',paddingRight:'40px'})
     //     })
     // },13000)                //第一名缓慢出字效果
+</script>
+<script>   //学生上机编号表
+    window.onload=function(){
+        var computer = document.getElementById("computer");        
+            var srcC=document.createElement('script');
+            srcC.src= "js/computer.js";
+            document.body.appendChild(srcC);
+            srcC.onload=function(){
+                showTable();
+                document.body.removeChild(srcC);
+            }        
+    }
+
+function showTable() {
+        var arr1=[];
+        var arr2=[];
+        for (var prop in num1) {
+            arr1.push(num1[prop]);
+        }
+            var count = 5;               //定义一行表格显示多少学生
+            var len=arr1.length-1;            
+            var th = document.createElement('tr');
+            var arr1_0=arr1[0].split('-');
+            
+            for(var k=0;k<count;k++){
+                var td1 = document.createElement('td');
+                td1.textContent=arr1_0[0];
+                var td2 = document.createElement('td');
+                td2.textContent=arr1_0[1];
+                th.appendChild(td1);
+                th.appendChild(td2);
+            }
+            computer.appendChild(th);
+            for(var i=0;i<len/count;i++){
+                var tr =  document.createElement('tr');
+                for(var j=1;j<count+1;j++){
+                    var temp=arr1[(i*5+j)].split('-');
+                    // console.log(temp[0]+"---"+temp[1]);
+                    var td3 = document.createElement('td');
+                    td3.textContent=temp[0];
+                    var td4 = document.createElement('td');
+                    td4.textContent=temp[1];
+                    tr.appendChild(td4);
+                    tr.appendChild(td3);
+                }
+                computer.appendChild(tr);
+            }
+            
+            // for(var i=0;i<len/count;i++){
+            //     var tr = document.createElement('tr');
+            // }
+            // for (var i = 0; i < len+1; i++) {
+            //     var td = document.createElement('td');
+            //     td.innerText = arr1[i];
+            //     td.className = "td";
+            //     if (i > 0) {
+            //         count += parseInt(arr1[i]);
+            //     } else {
+            //         td.className = "firstTd";
+            //     }
+            //     tr.appendChild(td);
+            // }
+            // var td1 = document.createElement('td');
+           
+            // td1.className = "td";
+            // tr.appendChild(td1);
+            // content.appendChild(tr);
+        
+    }
+
 </script>
 <body>
