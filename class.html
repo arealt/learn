@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+
+<style>
+    html,body,ul,ol{
+        margin:0;
+        padding:0;
+
+    }
+    body{
+        padding:0 2px;
+    }
+    table {
+        border-collapse: collapse;
+        font-size: 12px;
+        border:1px red solid;
+        min-width: 300px;
+        max-width: 900px; 
+        width:100%;       
+    }
+     
+     tr, td {
+        border: 1px solid black;
+    }
+    i {
+        font-style:normal;
+    }
+    table tr{
+        min-width:300px;
+        max-width:1000px;
+        width:100%;
+        
+    }
+    td {
+        text-align: center;
+        height: 46px; /*这里需要自己调整，根据自己的需求调整高度*/
+        position: relative;
+    }
+    td[class=first]{
+        flex: 8;
+    }
+    /* td[class=first]:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 119px;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        display: block;
+        transform: rotate(-64deg);
+        transform-origin: top;
+        -ms-transform: rotate(-45deg);
+        -ms-transform-origin: top;
+    } */
+    .title1{
+        position: absolute;
+        top: 2px;
+        right:2px;
+    }
+    .title2{
+        position: absolute;
+        top: 30px;
+        left:2px;
+    }
+    td>span{
+        display: block;    
+        width:100%;
+        line-height:1.5em;
+        font-weight: 500;
+        position: absolute;
+        top:0;
+        height:18px;
+        
+    }
+    .words{
+        display: inline-block;
+        margin-top:16px;
+        padding:5px 0;
+    }
+    .words>i{
+        display:inline-block;
+    }
+    .blue{
+        color:blue;
+    }
+    .green{
+        color:green;
+    }
+    .purple{
+        color:purple;
+    }
+    .status{
+        color:rgb(216, 81, 182);
+    }
+    .title{
+        color:crimson;
+    }
+    h3{
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 10px;
+        color:mediumvioletred;
+    }
+    </style>
+
+</head>
+<body>
+    <h3>课表</h3>
+<table>
+    <tr>
+        <td class="first"><i class="title1 title">星期</i><i class="title2 status">节数</i></td>
+        <td class="title" style="flex:12;">星期一</td>
+        <td class="title" style="flex:12;">星期二</td>
+        <td class="title" style="flex:13;">星期三</td>
+        <td class="title" style="flex:17.5;">星期四</td>
+        <td class="title" style="flex:17;">星期五</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="status">语文</td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17秋平面设计2班</i><br><i></i></div></td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17秋平面设计2班</i></div></td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17平面设计1班</i></div></td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17平面设计1班</i></div></td>
+    </tr>
+    <tr>
+            <td>2</td>
+        <td class="status">语文</td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17秋平面设计2班</i></div></td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17秋平面设计2班</i><br><i></i></div></td>
+        <td><span class="blue">广告创意</span><div class="words"><i>17平面设计1班</i></div></td>
+        <td class="status">体育</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td><span class="blue">广告创意</span><div class="words"><i>17平面设计1班</i><br><i></i></div></td>
+            <td class="status">职业道德与法律</td>
+        <td><span class="blue"></span><div class="words"><i></i></div></td>
+        <td class="status"></td>
+        <td class="status">体育</td>
+    </tr>
+    <tr>
+            <td>中午</td>
+        <td class="status" colspan="5"></td>
+        
+    </tr>
+    <tr>
+            <td>4</td>
+        <td class="status"></td>
+        <td class="status"></td>
+        <td class="status">劳动</td>
+        <td class="status"></td>
+        <td class="status">班会</td>
+    </tr>
+    <tr>
+            <td>5</td>
+            <td class="status"></td>
+            <td class="status"></td>
+            <td class="status">劳动</td>
+            <td class="status"></td>
+            <td class="status">劳动</td>
+    </tr>
+    <tr>
+            <td>5</td>
+        <td class="status"></td>
+        <td class="status"></td>
+        <td class="status">班会</td>
+        <td class="status"></td>
+        <td class="status">劳动</td>
+    </tr>
+</table>
+
+</body>
+</html>
