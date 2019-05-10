@@ -27,7 +27,7 @@ var data = {
 "<img src='https://s2.ax1x.com/2019/01/12/FjhrlR.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh2TO.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhg0K.jpg' />",
     "洪永正":"<img src='https://s2.ax1x.com/2019/01/12/Fjho6I.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhHnP.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhTXt.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/Fjhb0f.jpg' />",
-    "胡勋":"<img src='https://s2.ax1x.com/2019/01/12/Fjhz1s.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhxpj.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4Scn.jpg' />",
+    //"胡勋":"<img src='https://s2.ax1x.com/2019/01/12/Fjhz1s.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhxpj.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4Scn.jpg' />",
     "胡宇星":"<img src='https://s2.ax1x.com/2019/01/12/Fj4PBV.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4Cn0.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4i7T.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/Fj4kAU.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4pXq.jpg' />",
     "黄坤":"<img src='https://s2.ax1x.com/2019/01/12/Fj4Z9J.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4mcR.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4e39.jpg' />" +
