@@ -87,7 +87,7 @@ var data = {
 "<img src='https://s2.ax1x.com/2019/01/13/FvzzNQ.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvzjHS.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/13/FvzxAg.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSC3n.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSij0.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/13/FxSPcq.jpg' />",
-    "杨帆":"<img src='https://s2.ax1x.com/2019/01/13/FxSK3R.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSm4J.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSuC9.jpg' />",
+
     "杨思怡":"<img src='https://s2.ax1x.com/2019/01/13/FxS1u6.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxS3DK.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxS8HO.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/13/FxSYUe.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSJED.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSt4H.jpg' />",
     "占侧国":"<img src='https://s2.ax1x.com/2019/01/13/FxSrb8.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSwvt.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FxSdgI.jpg' />" +
