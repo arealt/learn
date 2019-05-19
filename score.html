@@ -60,10 +60,11 @@
     </div>
 </header>
 <section class="w main">
-    <select name="sele" id="sele">
+    <select name="sele" id="sele" style="width:300px;">
         <option selected value="0">选择查看成绩:</option>
-        <option value="1">期中成绩</option>
-        <option value="2">期末成绩</option>
+        <option value="1">第一学期期中成绩</option>
+        <option value="2">第一学期期末成绩</option>
+        <option value="3">第二学期期中成绩</option>
     </select>
     <h1 style="text-align: center;" id="h1"></h1>
     <table id="content"></table>
@@ -84,10 +85,13 @@
             var scr=document.createElement('script');
             if (sele.value == 1) {
                 scr.src = "js/score1.js";
-                h1.innerHTML = "第一学年上学期期中成绩";
+                h1.innerHTML = "第一学年上学期———期中成绩";
             } else if (sele.value == 2) {
                 scr.src = "js/score2.js";
-                h1.innerHTML = "第一学年上学期期末成绩";
+                h1.innerHTML = "第一学年上学期———期末成绩";
+            }else if (sele.value == 3) {
+                scr.src = "js/score3.js";
+                h1.innerHTML = "第一学年下学期———期中成绩";
             }else{
                 h1.innerHTML = "";
             }
