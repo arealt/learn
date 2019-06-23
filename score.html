@@ -65,6 +65,7 @@
         <option value="1">第一学期期中成绩</option>
         <option value="2">第一学期期末成绩</option>
         <option value="3">第二学期期中成绩</option>
+        <option value="4">第二学期期末成绩</option>
     </select>
     <h1 style="text-align: center;" id="h1"></h1>
     <table id="content"></table>
@@ -92,6 +93,9 @@
             }else if (sele.value == 3) {
                 scr.src = "js/score3.js";
                 h1.innerHTML = "第一学年下学期———期中成绩";
+            }else if (sele.value==4){
+                scr.src = "js/score4.js";
+                h1.innerHTML = "第一学年下学期———期末成绩";
             }else{
                 h1.innerHTML = "";
             }
