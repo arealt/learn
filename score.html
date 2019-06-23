@@ -61,7 +61,7 @@
 </header>
 <section class="w main">
     <select name="sele" id="sele" style="width:300px;height:60px;margin-top:10px;margin-left:10px;text-indent:0.6em">
-        <option selected value="0">选择查看成绩:</option>
+        <option selected value="9">选择查看成绩:</option>
         <option value="1">第一学期期中成绩</option>
         <option value="2">第一学期期末成绩</option>
         <option value="3">第二学期期中成绩</option>
@@ -73,7 +73,6 @@
 <script>
     window.onload=function(){
         var sele = document.getElementById("sele");
-//        var scr = document.getElementById("scr");
         var content = document.getElementById("content");
         var h1 = document.getElementById("h1");
         sele.addEventListener("change", function () {
@@ -93,9 +92,10 @@
                   scr.src = "js/score3.js"; h1.innerHTML = "第一学年上学期———期中成绩";break;
                 case 4: 
                   scr.src = "js/score4.js"; h1.innerHTML = "第一学年上学期———期中成绩";break;
+                case 9：
+                  h1.innerHTML = "请选择查询成绩的学期";break;
             }
             document.body.appendChild(scr);
-
             scr.onload=function(){
                 showTable();
                 document.body.removeChild(scr);
