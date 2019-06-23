@@ -84,21 +84,6 @@
                 i=i-1;
             }
             var scr=document.createElement('script');
-        /*    if (sele.value == 1) {
-                scr.src = "js/score1.js";
-                h1.innerHTML = "第一学年上学期———期中成绩";
-            } else if (sele.value == 2) {
-                scr.src = "js/score2.js";
-                h1.innerHTML = "第一学年上学期———期末成绩";
-            }else if (sele.value == 3) {
-                scr.src = "js/score3.js";
-                h1.innerHTML = "第一学年下学期———期中成绩";
-            }else if (sele.value == 4){
-                scr.src = "js/score4.js";
-                h1.innerHTML = "第一学年下学期———期末成绩";
-            }else{
-                h1.innerHTML = "";
-            }*/
             while(sele.value){
                 case:1 {scr.src = "js/score1.js"; h1.innerHTML = "第一学年上学期———期中成绩";};break;
                 case:2 {scr.src = "js/score2.js"; h1.innerHTML = "第一学年上学期———期中成绩";};break;
@@ -115,7 +100,6 @@
     }
 
 function showTable() {
-
         for (var prop in score) {
             var arr1 = score[prop].split("-");
             var tr = document.createElement('tr');
