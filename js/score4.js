@@ -2,7 +2,7 @@
  * Created by Administrator on 2019/1/13.
  */
 
-var obj = {
+var score = {
     0:"姓名-构成基础-几何形体-AI-语文",
     1:"曹进南-45-52-48-32",
     2:"曹谦亮-60-82-62-64",
