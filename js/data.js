@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Created by Administrator on 2019/1/10.
  */
 var data = {
@@ -16,27 +16,33 @@ var data = {
     "陈彦甫":"<img src='https://s2.ax1x.com/2019/01/12/FjfJaD.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfYIe.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfNPH.jpg' />",
     "陈媛媛":"<img src='https://s2.ax1x.com/2019/01/12/FjfdxI.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfBsP.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfaRA.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/FjfDqf.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjf0Mt.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfydS.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/FjfgiQ.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfsZ8.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjf6Ig.jpg' />",
+"<img src='https://s2.ax1x.com/2019/01/12/FjfgiQ.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfsZ8.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjf6Ig.jpg' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MNf2Ue.gif' /><img src='https://s2.ax1x.com/2019/11/14/MNfgED.gif' />",
     "程阳":"<img src='https://s2.ax1x.com/2019/01/12/FjfLW9.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfqJJ.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjf7oF.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/Fjfbi4.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfOzR.jpg' />",
+"<img src='https://s2.ax1x.com/2019/01/12/Fjfbi4.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjfOzR.jpg' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MNhdZ8.gif' /><img src='https://s2.ax1x.com/2019/11/14/MNhUqf.gif' />",
     "方子俊":"<img src='https://s2.ax1x.com/2019/01/12/FjhpdO.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh9oD.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhSeK.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/FjfxL6.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhPFe.jpg' />" ,
     "甘世泽":"<img src='https://s2.ax1x.com/2019/01/12/Fjh3Ss.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhGyq.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh8ln.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/FjhlWj.jpg' />",
     "苟燕":"<img src='https://s2.ax1x.com/2019/01/12/FjhyOx.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhs61.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhcm6.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/FjhrlR.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh2TO.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhg0K.jpg' />",
+"<img src='https://s2.ax1x.com/2019/01/12/FjhrlR.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjh2TO.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fjhg0K.jpg' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MNh2LV.gif' /><img src='https://s2.ax1x.com/2019/11/14/MNhoW9.gif' /><img src='https://s2.ax1x.com/2019/11/14/MNhWZT.gif' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MNhcMq.gif' /><img src='https://s2.ax1x.com/2019/11/14/MNhgs0.gif' />",
     "洪永正":"<img src='https://s2.ax1x.com/2019/01/12/Fjho6I.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhHnP.jpg' /><img src='https://s2.ax1x.com/2019/01/12/FjhTXt.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/Fjhb0f.jpg' />",
-   
+"<img src='https://s2.ax1x.com/2019/01/12/Fjhb0f.jpg' /><img src='https://s2.ax1x.com/2019/11/14/MN4mWj.gif' /><img src='https://s2.ax1x.com/2019/11/14/MN4ETS.gif' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MN4eYQ.gif' /><img src='https://s2.ax1x.com/2019/11/14/MN4ZFg.gif' />",
     "胡宇星":"<img src='https://s2.ax1x.com/2019/01/12/Fj4PBV.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4Cn0.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4i7T.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/Fj4kAU.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4pXq.jpg' />",
+"<img src='https://s2.ax1x.com/2019/01/12/Fj4kAU.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4pXq.jpg' /><img src='https://s2.ax1x.com/2019/11/14/MN4alR.gif' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MN4YY4.gif' /><img src='https://s2.ax1x.com/2019/11/14/MN4Up9.gif' /><img src='https://s2.ax1x.com/2019/11/14/MN4d61.gif' /><img src='https://s2.ax1x.com/2019/11/14/MN4JkF.gif' />",
     "黄坤":"<img src='https://s2.ax1x.com/2019/01/12/Fj4Z9J.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4mcR.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4e39.jpg' />" +
     "<img src='https://s2.ax1x.com/2019/01/12/Fj4Knx.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4nj1.jpg' />",
     "黄臻骏":"<img src='https://s2.ax1x.com/2019/01/12/Fj41AO.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4Y3d.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4J9H.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/Fj43ND.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj484e.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4tgA.jpg' />",
     "江燕":"<img src='https://s2.ax1x.com/2019/01/12/Fj4gvn.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4yCQ.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj478J.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/Fj463j.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4DUS.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj44ET.jpg' />" +
-"<img src='https://s2.ax1x.com/2019/01/12/Fj4Ruq.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4WD0.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj45UU.jpg' />",
+"<img src='https://s2.ax1x.com/2019/01/12/Fj4Ruq.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj4WD0.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj45UU.jpg' />"+
+"<img src='https://s2.ax1x.com/2019/11/14/MN4fXt.gif' />",
     "蒋兆丹":"<img src='https://s2.ax1x.com/2019/01/12/Fj4z5D.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj5C2d.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj5PxA.jpg' />" +
 "<img src='https://s2.ax1x.com/2019/01/12/Fj5pPe.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj598H.jpg' /><img src='https://s2.ax1x.com/2019/01/12/Fj5FKI.jpg' />",
     "李家豪":"<img src='https://s2.ax1x.com/2019/01/13/FvX4Rx.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvXTsO.jpg' /><img src='https://s2.ax1x.com/2019/01/13/FvX7LD.jpg' />" +
@@ -115,4 +121,3 @@ var data = {
 "<img src='https://s2.ax1x.com/2019/04/15/AjxtC4.jpg' /><img src='https://s2.ax1x.com/2019/04/15/AjxGUU.jpg' /><img src='https://s2.ax1x.com/2019/04/15/AjxU29.jpg' />"+
 "<img src='https://s2.ax1x.com/2019/04/15/AjxJ5F.jpg' />"
 }
-
